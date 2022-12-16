@@ -23,6 +23,7 @@ React 프로젝트 빌드 시 사용하는 기초 환경설정입니다.
   - import 순서 자동정렬
   - github workflow(PR 테스트 후 코멘트)
   - PR template
+  - development, production 모드에 따라 다른 빌드 환경설정
 
 ## Scripts
 * node version : 14.17.0

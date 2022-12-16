@@ -1,11 +1,11 @@
 import App from 'App';
+import { worker } from 'mocks/browser';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 if (process.env.NODE_ENV === 'development') {
-  const { mockServiceWorker } = require('./mocks/browser');
-  mockServiceWorker.start();
+  worker.start();
 }
 
 const root = createRoot(document.getElementById('root') as HTMLElement);
