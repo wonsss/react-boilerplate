@@ -11,5 +11,5 @@ module.exports = {
     '\\.(jpg|ico|jpeg|png|gif|webp)$': '<rootDir>/mocks/fileMock.js',
   },
   setupFilesAfterEnv: ['./jest.setup.js'],
-  // reporters: ['default', 'jest-junit'],
+  reporters: ['default', 'jest-junit'],
 };
