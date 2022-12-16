@@ -27,20 +27,20 @@ jobs:
       - name: Install node packages
         run: yarn
 
-      - name: Component test
+      - name: Jest Component Test
         run: yarn run test-ci
 
       - name: Jest Test Comment
         uses: MishaKav/jest-coverage-comment@main
         with:
           coverage-summary-path: coverage/coverage-summary.json
-          title: Test
-          summary-title: Jest Test Coverage
+          title: Jest Test
+          summary-title: Coverage
           badge-title: Coverage
           hide-comment: false
           create-new-comment: true
           hide-summary: false
-          junitxml-title: Jest Test Result
+          junitxml-title: Result
           junitxml-path: junit.xml
 
       - name: TypeScript test
