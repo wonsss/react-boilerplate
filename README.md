@@ -25,6 +25,7 @@ React 프로젝트 빌드 시 사용하는 기초 환경설정입니다.
   - PR template
 
 ## Scripts
+* node version : 14.17.0
 
 - 설치
 
