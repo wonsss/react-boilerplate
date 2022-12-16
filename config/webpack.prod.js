@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
 const webpack = require('webpack');
 const dotenv = require('dotenv');
 const { merge } = require('webpack-merge');
