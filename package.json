@@ -8,7 +8,6 @@
   "scripts": {
     "typecheck": "tsc --build && tsc --build --clean",
     "start:prod": "webpack serve --config config/webpack.prod.js",
-    "start:local": "cross-env NODE_ENV=local webpack serve --config config/webpack.dev.js",
     "start:dev": "webpack serve --config config/webpack.dev.js",
     "build:prod": "webpack --config config/webpack.prod.js",
     "build:dev": "webpack --config config/webpack.dev.js",

@@ -46,14 +46,6 @@ module.exports = smp.wrap(
         },
       ],
     },
-    plugins: [
-      new ForkTsCheckerWebpackPlugin(),
-      new webpack.DefinePlugin({
-        'process.env.BASE_URL': JSON.stringify(process.env.PROD_BASE_URL),
-        'process.env.IS_LOCAL': false,
-        'process.env.CLIENT_ID': null,
-        'process.env.PUBLIC_KEY': null,
-      }),
-    ],
+    plugins: [new ForkTsCheckerWebpackPlugin()],
   }),
 );

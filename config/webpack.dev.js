@@ -45,10 +45,5 @@ module.exports = smp.wrap(
         },
       ],
     },
-    plugins: [
-      new webpack.DefinePlugin({
-        'process.env.BASE_URL': JSON.stringify(process.env.DEV_BASE_URL),
-      }),
-    ],
   }),
 );
