@@ -16,7 +16,7 @@
     "build-storybook": "build-storybook",
     "pretty": "prettier --write \"src/**/*.{ts,tsx,json}\"",
     "test": "jest --watchAll",
-    "test-ci": "jest --silent --coverage --coverageReporters json-summary"
+    "test-ci": "jest -ci --coverage --coverageReporters json-summary"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
