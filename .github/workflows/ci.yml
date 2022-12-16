@@ -28,7 +28,7 @@ jobs:
         run: yarn
 
       - name: Component test
-        run: yarn run test
+        run: yarn run test-ci
 
       - name: TypeScript test
         run: yarn run typecheck
