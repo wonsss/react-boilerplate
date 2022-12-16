@@ -1,0 +1,47 @@
+name: PR Test
+
+on:
+  pull_request:
+    branches:
+      - main
+      - develop
+    paths:
+      - /**
+      - .github/** # Github Actions 작업을 위한 포함
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16.10.0'
+          cache: 'yarn'
+          cache-dependency-path: '**/yarn.lock'
+
+      - name: Install node packages
+        run: yarn
+
+      - name: Jest Component Test
+        run: yarn run test-ci
+
+      - name: Jest Test Comment
+        uses: MishaKav/jest-coverage-comment@main
+        with:
+          coverage-summary-path: coverage/coverage-summary.json
+          title: Jest Test
+          summary-title: Coverage
+          badge-title: Coverage
+          hide-comment: false
+          create-new-comment: true
+          hide-summary: false
+          junitxml-title: Result
+          junitxml-path: junit.xml
+
+      - name: TypeScript test
+        run: yarn run typecheck
