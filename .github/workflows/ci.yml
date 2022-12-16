@@ -1,4 +1,4 @@
-name: CI
+name: PR Test
 
 on:
   pull_request:
@@ -29,6 +29,19 @@ jobs:
 
       - name: Component test
         run: yarn run test-ci
+
+      - name: Jest Test Comment
+        uses: MishaKav/jest-coverage-comment@main
+        with:
+          coverage-summary-path: src/coverage/coverage-summary.json
+          title: Test
+          summary-title: Jest Test Coverage
+          badge-title: Coverage
+          hide-comment: false
+          create-new-comment: true
+          hide-summary: false
+          junitxml-title: Jest Test Result
+          junitxml-path: junit.xml
 
       - name: TypeScript test
         run: yarn run typecheck
