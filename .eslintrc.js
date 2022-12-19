@@ -21,5 +21,6 @@ module.exports = {
     'prettier/prettier': 'error',
     'react/react-in-jsx-scope': 'off',
     '@typescript-eslint/no-var-requires': 'off',
+    'react/no-unknown-property': ['error', { ignore: ['css'] }],
   },
 };
