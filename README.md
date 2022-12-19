@@ -25,16 +25,16 @@ Jest, RTL을 사용하여 테스트 환경설정을 하였고, PR을 만들면 �
 - 린팅 : [ESlint](https://eslint.org/)
 - 전역상태 관리 : [Recoil](https://recoiljs.org/ko/)
 - API 연동 : [Axios](https://axios-http.com/), [React Query](https://react-query-v3.tanstack.com/)
-- 테스트 : [Jest](https://jestjs.io/), [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/), [MSW](https://mswjs.io/)
+- 테스트 : [Storybook](https://storybook.js.org/), [Jest](https://jestjs.io/), [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/), [MSW](https://mswjs.io/)
 - 패키지 매니저: [Yarn](https://yarnpkg.com/)
-- 빌드 환경설정 : [webpack], [babel-loader]
+- 빌드 환경설정 : [Webpack](https://webpack.kr/), [babel-loader](https://www.npmjs.com/package/babel-loader)
 
 - 기타 특징
   - 절대경로
   - import 순서 자동정렬
   - github workflow(PR 테스트 후 코멘트)
   - PR template
-  - development, production 모드에 따라 다른 빌드 환경설정
+  - development, production 모드에 따라 최적화된 빌드 환경설정 구분
 
 ## Scripts
 * node version : 14.17.0
