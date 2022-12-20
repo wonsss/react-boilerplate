@@ -26,7 +26,10 @@ module.exports = smp.wrap(
                   },
                 },
               ],
-              ['@babel/preset-react', { runtime: 'automatic' }],
+              [
+                '@babel/preset-react',
+                { runtime: 'automatic', importSource: '@emotion/react' },
+              ],
               '@babel/preset-typescript',
             ],
             plugins: [
