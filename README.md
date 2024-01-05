@@ -8,7 +8,6 @@ CRA를 사용하지 않고 Webpack, Babel로 개발, 프로덕션을 구분한 �
 
 Jest, RTL을 사용하여 테스트 환경설정을 하였고, PR을 만들면 자동 테스트 후 PR에 테스트 결과 코멘트가 달리도록 기본 설정했습니다.
 
-
 ## 템플릿 사용방법
 
 해당 템플릿으로 새 저장소 만들어서 프로젝트 시작하기
@@ -22,7 +21,7 @@ Jest, RTL을 사용하여 테스트 환경설정을 하였고, PR을 만들면 �
 - 라우팅 : [React Router](https://reactrouter.com/en/main)
 - CSS 스타일링 : [emotions](https://emotion.sh/docs/introduction)
 - 코드 포매팅 : [Prettier](https://prettier.io/)
-- 린팅 : [ESlint](https://eslint.org/)
+- 린팅 : [ESlint](https://eslint.org/), [StyleLint](https://stylelint.io/)
 - 전역상태 관리 : [Recoil](https://recoiljs.org/ko/)
 - API 연동 : [Axios](https://axios-http.com/), [React Query](https://react-query-v3.tanstack.com/)
 - 테스트 : [Storybook](https://storybook.js.org/), [Jest](https://jestjs.io/), [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/), [MSW](https://mswjs.io/)
@@ -32,12 +31,15 @@ Jest, RTL을 사용하여 테스트 환경설정을 하였고, PR을 만들면 �
 - 기타 특징
   - 절대경로
   - import 순서 자동정렬
+  - CSS 순서 자동정렬
   - github workflow(PR 테스트 후 코멘트)
   - PR template
   - development, production 모드에 따라 최적화된 빌드 환경설정 구분
+  - WebAPI, ECMAScript, CSS 브라우저 호환성 체크 린트 플러그인 추가
 
 ## Scripts
-* node version : 14.17.0
+
+- node version : 18.16.1
 
 - 설치
 
