@@ -16,11 +16,12 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint', 'prettier'],
+  plugins: ['react', '@typescript-eslint', 'prettier', 'compat'],
   rules: {
     'prettier/prettier': 'error',
     'react/react-in-jsx-scope': 'off',
     '@typescript-eslint/no-var-requires': 'off',
     'react/no-unknown-property': ['error', { ignore: ['css'] }],
+    'compat/compat': 'warn',
   },
 };
