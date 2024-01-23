@@ -13,12 +13,12 @@ jobs:
         with:
           node-version: 16
       - name: Install dependencies
-        run: npm install
+        run: yarn
       - name: Build
-        run: npm run build
+        run: yarn run build:dev
       - name: Run Lighthouse CI
         run: |
-          npm install -g @lhci/cli@0.8.x
+          yarn add -g @lhci/cli@0.8.x
           lhci autorun
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ env.LHCI_GITHUB_APP_TOKEN }}
