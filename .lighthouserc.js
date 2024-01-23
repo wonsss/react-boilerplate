@@ -8,7 +8,9 @@ module.exports = {
     },
     upload: {
       startServerCommand: 'yarn run start:dev',
-      target: 'temporary-public-storage',
+      target: 'filesystem',
+      outputDir: './lhci_reports',
+      reportFilenamePattern: '%%PATHNAME%%-%%DATETIME%%-report.%%EXTENSION%%',
     },
   },
 };
