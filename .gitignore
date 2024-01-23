@@ -21,3 +21,6 @@ yarn-debug.log*
 yarn-error.log*
 
 junit.xml
+
+.lighthouseci
+lhci_reports

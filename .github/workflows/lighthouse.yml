@@ -30,7 +30,7 @@ jobs:
           script: |
             const fs = require('fs');
             # 본인의 환경에 맞게 설정해주세요
-            const results = JSON.parse(fs.readFileSync("/{Github Actions runner directory}/lhci_reports/manifest.json"));
+            const results = JSON.parse(fs.readFileSync("lhci_reports/manifest.json"));
             # comment를 담을 변수 입니다.
             let comments = "";
 
